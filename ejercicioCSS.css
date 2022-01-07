@@ -1,0 +1,55 @@
+h3 {
+    color: blue; 
+    text-align: center;
+}
+
+#main {background-color: whitesmoke; 
+    text-align: center; 
+    padding: 30px; 
+    margin: 30px;
+}
+
+.alert {
+    color: #72353D; 
+    background: #EAD2D5;
+    margin: 30px; 
+    padding: 30px;
+}
+
+#main2 {
+    height: 200px; 
+    background-color: blue; 
+    width: 40%;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    transform: rotate(90deg);
+    animation: mymove 5s infinite;
+}
+
+#main3 {
+    height: 200px; 
+    background-color: red; 
+    width: 40%;
+    padding: 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    transform: rotate(90deg);
+    animation: mymove2 5s infinite;
+}
+
+h3, p {
+    font-family: Verdana; 
+    font-size: 1.5em;
+}
+
+/* main que empieza en rojo*/
+@keyframes mymove {
+    from {background-color: red;}
+    to {background-color: blue;}
+}
+/* main que empieza en azul*/
+@keyframes mymove2 {
+    from {background-color: blue;}
+    to {background-color: red;}
+}
